@@ -47,12 +47,12 @@ app.get(
   "/auth/google/callback",
   passport.authenticate("google"),
   (req, res) => {
-    // // res.json({
-    // //     status : "success",
-    // //     message:"Google Authentication Successful!"
-    // // })
-    // res.redirect("http://localhost:3000/chat");
-    res.send("Google Authentication Successful!")
+    // res.json({
+    //     status : "success",
+    //     message:"Google Authentication Successful!"
+    // })
+    res.redirect("http://localhost:3000/chat");
+    // res.send("Google Authentication Successful!")
   }
 );
 
